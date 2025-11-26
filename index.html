@@ -58,18 +58,19 @@
 <p class="p1"><span class="s1">&lt;script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"&gt;&lt;/script&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// **ACTION: REPLACE THIS ENTIRE CONFIG OBJECT with the one from your Firebase console**</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// **ACTION: Ensure your unique Firebase config is pasted here**</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const firebaseConfig = {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>apiKey: "YOUR_API_KEY",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>authDomain: "YOUR_PROJECT_ID.firebaseapp.com",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>projectId: "YOUR_PROJECT_ID",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>storageBucket: "YOUR_PROJECT_ID.appspot.com",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>messagingSenderId: "YOUR_SENDER_ID",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>appId: "YOUR_APP_ID"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>apiKey: "AIzaSyBbkhQDd2ml_4ZwNc7qDpzZfxcSEez3q6Y", // Your actual key</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>authDomain: "trivia-leaderboard-4ac12.firebaseapp.com", // Your actual domain</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// NOTE: This databaseURL is crucial for Realtime DB access!</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>databaseURL: "https://trivia-leaderboard-4ac12-default-rtdb.firebaseio.com",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>projectId: "trivia-leaderboard-4ac12", // Your actual ID</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>storageBucket: "trivia-leaderboard-4ac12.firebasestorage.app",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>messagingSenderId: "175424687718",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>appId: "1:175424687718:web:fa5c518e5df0bc8ed827a7"</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Initialize Firebase using the standard, globally available 'firebase' variable</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Initialize Firebase using the global 'firebase' object (v8 syntax)</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>firebase.initializeApp(firebaseConfig);</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Get a reference to the Realtime Database instance</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const db = firebase.database();<span class="Apple-converted-space"> </span></span></p>
