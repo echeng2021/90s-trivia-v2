@@ -277,4 +277,3 @@ function displayLiveLeaderboard() {
             console.error('Firebase Fetch Error: ', error);
         });
 }
-}
