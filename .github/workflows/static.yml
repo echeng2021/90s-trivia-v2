@@ -1,0 +1,35 @@
+# .github/workflows/static.yml
+name: Deploy Static Site
+
+on:
+  # Triggers the workflow on pushes to the main branch
+  push:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # Required permissions for deploying to GitHub Pages
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout Repository
+        # Downloads your files from the main branch
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        # This is the dedicated action that handles the complex deployment steps
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Use the default token provided by GitHub Actions for security
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The source directory to publish ('.' means the root of the repository)
+          publish_dir: .
+          # The branch to push the final built site to (optional, defaults to gh-pages)
+          publish_branch: gh-pages
